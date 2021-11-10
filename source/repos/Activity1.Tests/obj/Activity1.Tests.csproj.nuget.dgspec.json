@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1.Tests\\Activity1.Tests.csproj": {}
+    "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1.Tests\\Activity1.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1.Tests\\Activity1.Tests.csproj": {
+    "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1.Tests\\Activity1.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1.Tests\\Activity1.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1.Tests\\Activity1.Tests.csproj",
         "projectName": "Activity1.Tests",
-        "projectPath": "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1.Tests\\Activity1.Tests.csproj",
+        "projectPath": "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1.Tests\\Activity1.Tests.csproj",
         "packagesPath": "C:\\Users\\BunBun Industries\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1.Tests\\obj\\",
+        "outputPath": "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1\\Activity1.csproj": {
-                "projectPath": "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1\\Activity1.csproj"
+              "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1\\Activity1.csproj": {
+                "projectPath": "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1\\Activity1.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1\\Activity1.csproj": {
+    "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1\\Activity1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1\\Activity1.csproj",
+        "projectUniqueName": "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1\\Activity1.csproj",
         "projectName": "Activity1",
-        "projectPath": "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1\\Activity1.csproj",
+        "projectPath": "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1\\Activity1.csproj",
         "packagesPath": "C:\\Users\\BunBun Industries\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BunBun Industries\\Desktop\\DotNet_2\\Activity1\\obj\\",
+        "outputPath": "C:\\Users\\BunBun Industries\\source\\repos\\DotNet2\\source\\repos\\Activity1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

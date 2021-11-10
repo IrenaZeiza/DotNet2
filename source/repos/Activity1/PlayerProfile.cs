@@ -98,30 +98,11 @@ namespace CSharp.Activity.Profile
             int[] month = { 31, 28, 31, 30, 31, 30,
                       31, 31, 30, 31, 30, 31 };
 
-              tempAge = currentYear - this.BirthDate.Year;
-
-            if (this.BirthDate.Day > currentDayOfMonth)
-
-            {
-                currentMonth = currentMonth - 1;
-
-                currentDayOfMonth = currentDayOfMonth
-                          + month[birthdayMonth - 1];
-            }
-
-            if (this.BirthDate.Month > currentMonth)
-            {
-                currentYear = currentYear - 1;
-                currentMonth = currentMonth + 12;
-            }
+           
 
          
 
-            return tempAge;
-
-            #endregion
-
-
+   
 
            
 
@@ -142,6 +123,9 @@ namespace CSharp.Activity.Profile
                 currentMonth = currentMonth + 12;
             }
 
+            return tempAge;
+
+            #endregion
 
 
 
