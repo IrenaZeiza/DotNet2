@@ -1,6 +1,7 @@
 using System;
 using System.Reflection;
 
+
 namespace CSharp.Activity.Datastore
 {
     public class ArrayStack<T> : ArrayBase<T>
@@ -45,22 +46,47 @@ namespace CSharp.Activity.Datastore
             //that the stack is not full, and that a similar item is not already inside the stack.
             //Throw InvalidOperationException if the stack is full.
 
-            //HINT: Remember that the bottom of the stack has index 0
 
-            // In .NET Core use: !typeof(T).GetTypeInfo().IsValueType && arg == null (also requires adding 'using System.Reflection;')
             if (!typeof(T).IsValueType && arg == null)
                 throw new ArgumentNullException("arg", "Input value cannot be null");
 
-            //start solution
+            if (Count < 5)
+            {
+                // test if it is not similar 
+                Push(arg);
+            }
+
+            else
+
+                throw new InvalidOperationException("The stack is full");
+            //   else if (IndexOf(arg) != NOT_IN_STRUCTURE) ;
+
+            if (typeof(T).Equals(arg))
+            {
+                throw new InvalidOperationException("Cannot be added, because it's already exist");
+            }
 
         }
+
+
+
+        // while (storeArray.Count > 0)
+        //   Console.Write(store.Pop() + ",");
+
+        //HINT: Remember that the bottom of the stack has index 0
+
+        // In .NET Core use: !typeof(T).GetTypeInfo().IsValueType && arg == null (also requires adding 'using System.Reflection;')
+
+
+        //start solution
+
 
 
         /// <summary>
         /// Pops and returns the topmost item from the stack.
         /// </summary>
         /// <returns>current count of the data store</returns>
-        public virtual T Pop()
+        public virtual T Pop(T arg)
         {
             //TODO Activity 2.6
             //Implement this method so that it 'pops' the topmost item from the stack.
@@ -70,6 +96,35 @@ namespace CSharp.Activity.Datastore
             //HINT: Remember that the bottom of the stack has index 0
 
             //start solution
+            if (!typeof(T).IsValueType && arg == null)
+                throw new ArgumentNullException("arg", "Input value cannot be null");
+
+            if (Count < 0 && Count < 5)
+            {
+                // test if it is not similar 
+                Pop(arg);
+            }
+
+         
+            else
+
+             throw new InvalidOperationException("Pop failed");
+
+           
+
+            //  < int> storeArray = new storeArray <string>(
+            //    input.Split(new string[] { " " }, StringSplitOptions.None);
+
+            //    // Remove the top element (will be d!)
+           // storeArray.Pop();
+
+            //    // Queue<string> myQueue = new Queue<string>(
+
+            //    // Remove the first element (will be a!)
+
+
+            //}
+
 
             return default(T); // in the final solution this statement should be deleted or modified
         }
@@ -79,7 +134,7 @@ namespace CSharp.Activity.Datastore
         /// Returns the topmost item of the stack without removing it.
         /// </summary>
         /// <returns></returns>
-        public virtual T Peek()
+        public virtual T Peek(T arg)
         {
             //TODO Activity 2.7
             //Implement this method so that it takes a look at the top most item of the stack.  It 
@@ -88,9 +143,25 @@ namespace CSharp.Activity.Datastore
 
             //HINT: Remember that the bottom of the stack is at the index 0
 
-			//start solution
-			
-            return default(T); // in the final solution this statement should be deleted or modified
+            //start solution
+
+            if (Count < 0 && Count < 5)
+            {
+                // test if it is not similar 
+                Peek (arg);
+            }
+            else
+
+                throw new InvalidOperationException("The Peek failed");
+
+            if (typeof(T).Equals(arg))
+            {
+                throw new InvalidOperationException("Cannot be added, because it's already exist");
+            }
+            return arg;
+            
+
+          // return default(T); // in the final solution this statement should be deleted or modified
         }
     }
 }

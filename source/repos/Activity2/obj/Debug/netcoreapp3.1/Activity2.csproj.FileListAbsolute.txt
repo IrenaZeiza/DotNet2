@@ -1,0 +1,10 @@
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\obj\Debug\netcoreapp3.1\Activity2.csproj.AssemblyReference.cache
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\obj\Debug\netcoreapp3.1\Activity2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\obj\Debug\netcoreapp3.1\Activity2.AssemblyInfoInputs.cache
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\obj\Debug\netcoreapp3.1\Activity2.AssemblyInfo.cs
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\obj\Debug\netcoreapp3.1\Activity2.csproj.CoreCompileInputs.cache
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\bin\Debug\netcoreapp3.1\Activity2.deps.json
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\bin\Debug\netcoreapp3.1\Activity2.dll
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\bin\Debug\netcoreapp3.1\Activity2.pdb
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\obj\Debug\netcoreapp3.1\Activity2.dll
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity2\obj\Debug\netcoreapp3.1\Activity2.pdb

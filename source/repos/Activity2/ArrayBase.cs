@@ -5,11 +5,18 @@ namespace CSharp.Activity.Datastore
     /// <summary>
     /// Abstract class for storage of items of type T.
     /// </summary>
+    /// 
     public abstract class ArrayBase<T>
     {
+
         /// <summary>
         /// A constant that represents the value returned when an item cannot be found in the array.
         /// </summary>
+        /// 
+
+
+
+
         public const int NOT_IN_STRUCTURE = -1;
 
         /// <summary>
@@ -20,7 +27,7 @@ namespace CSharp.Activity.Datastore
         /// <summary>
         /// This is the actual structure that the class uses to store array items.
         /// </summary>
-        private T[] storeArray;
+        public T[] storeArray;
 
         /// <summary>
         /// The number of items currently holt in the array.
@@ -40,8 +47,9 @@ namespace CSharp.Activity.Datastore
             // If the value of 'arraySize' is illegal for an array, 
             // then use DEFAULT_SIZE instead.
 
-			//start solution
-			
+            //start solution
+
+            int[] storeArray = new int[arraySize];
         }
 
 
@@ -63,7 +71,7 @@ namespace CSharp.Activity.Datastore
         /// </returns>
         public bool IsFull()
             => (this.Count == this.Capacity);
-        
+
 
         /// <summary>
         /// Returns the maximum size of the array.
@@ -143,9 +151,18 @@ namespace CSharp.Activity.Datastore
             //    :::
             // }
 
-			//start solution
-			
+            //start solution
+            for (int i = 0; i > storeArray.Length; i++)
+            {
+                if (argToFind.Equals(storeArray))
+                {
+                    return i;
+                }
+
+            }
+
             return NOT_IN_STRUCTURE;
+
         }
 
 
@@ -159,8 +176,18 @@ namespace CSharp.Activity.Datastore
             //TODO Activity 2.3
             //Add item to the array if array is not full and return new item index, otherwise return NOT_IN_STRUCTURE.
 
-			//start solution
-			
+            //start solution
+
+            //Array.Resize(ref objArray, objArray.Length + 1);
+           // objArray[objArray.Length - 1] = new Someobject();
+
+            for
+
+                (int i=0; i > DEFAULT_SIZE; i++)
+            {
+                return i;
+            }
+
             return NOT_IN_STRUCTURE;
         }
 
@@ -174,8 +201,24 @@ namespace CSharp.Activity.Datastore
             //TODO Activity 2.4
             //Remove item from the array, but if array is empty throw InvalidOperationException.
             //If the index is not last, compact remaining array items.
-			
-			//start solution
+
+            //start solution
+            //storeArray = storeArray.(source, index) => index != RemoveAt).ToArray;
+
+            // storeArray.RemoveAt(index); 
+
+            //  storeArray.RemoveAt("lazy");
+
+            foreach (var item in storeArray)
+            {
+                if (currentCount > 0)
+                {
+                    RemoveAt(index);
+                }
+
+            }
+
+
 
             throw new InvalidOperationException("Impossible to remove.");
         }
