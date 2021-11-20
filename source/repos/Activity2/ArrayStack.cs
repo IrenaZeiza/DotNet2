@@ -39,7 +39,7 @@ namespace CSharp.Activity.Datastore
         /// </summary>
         /// <param name="arg">Object to push on the top of the stack.</param>
         /// <returns></returns>
-        public virtual void Push(T arg)
+        public virtual void Push(T arg)// last in firs out 
         {
             //TODO Activity 2.5
             //Implement this method so that it 'pushes' the item 'arg' onto the top of the stack assuming
@@ -50,23 +50,32 @@ namespace CSharp.Activity.Datastore
             if (!typeof(T).IsValueType && arg == null)
                 throw new ArgumentNullException("arg", "Input value cannot be null");
 
-            if (Count < 5)
+            // if (Count < 5)// if count ==capacity 
+            // {
+            // test if it is not similar 
+            //      Push(arg);
+            // }
+            if (Count == Capacity)
             {
-                // test if it is not similar 
-                Push(arg);
+                throw new InvalidOperationException("the stack is full");
             }
-
             else
-
-                throw new InvalidOperationException("The stack is full");
-            //   else if (IndexOf(arg) != NOT_IN_STRUCTURE) ;
-
-            if (typeof(T).Equals(arg))
             {
-                throw new InvalidOperationException("Cannot be added, because it's already exist");
-            }
+                this[Count++] = arg;
 
+
+
+                //   else if (IndexOf(arg) != NOT_IN_STRUCTURE) ;
+
+                //    if (typeof(T).Equals(arg))
+                //    {
+                //        throw new InvalidOperationException("Cannot be added, because it's already exist");
+                //    }
+                //}
+
+            }
         }
+        
 
 
 
@@ -96,27 +105,36 @@ namespace CSharp.Activity.Datastore
             //HINT: Remember that the bottom of the stack has index 0
 
             //start solution
-            if (!typeof(T).IsValueType && arg == null)
-                throw new ArgumentNullException("arg", "Input value cannot be null");
+            //   Our solution:
 
-            if (Count < 0 && Count < 5)
+            //if (!typeof(T).IsValueType && arg == null)
+            //    throw new ArgumentNullException("arg", "Input value cannot be null");
+
+            //if (Count < 0 && Count < 5)
+            //{
+            //    // test if it is not similar 
+            //    Pop(arg);
+            //}
+
+
+            //else
+
+            // throw new InvalidOperationException("Pop failed");
+
+            if (Count == 0)
             {
-                // test if it is not similar 
-                Pop(arg);
+                throw new InvalidOperationException("the stack is empty...");
             }
 
-         
-            else
 
-             throw new InvalidOperationException("Pop failed");
-
-           
+            Count--;
+            return this[Count];
 
             //  < int> storeArray = new storeArray <string>(
             //    input.Split(new string[] { " " }, StringSplitOptions.None);
 
             //    // Remove the top element (will be d!)
-           // storeArray.Pop();
+            // storeArray.Pop();
 
             //    // Queue<string> myQueue = new Queue<string>(
 
@@ -126,7 +144,7 @@ namespace CSharp.Activity.Datastore
             //}
 
 
-            return default(T); // in the final solution this statement should be deleted or modified
+          //  return default(T); // in the final solution this statement should be deleted or modified
         }
 
 
@@ -143,25 +161,34 @@ namespace CSharp.Activity.Datastore
 
             //HINT: Remember that the bottom of the stack is at the index 0
 
-            //start solution
+            ////start solution
+            //Our solution: 
+            //if (Count < 0 && Count < 5)
+            //{
+            //    // test if it is not similar 
+            //    Peek (arg);
+            //}
+            //else
 
-            if (Count < 0 && Count < 5)
+            //    throw new InvalidOperationException("The Peek failed");
+
+            //if (typeof(T).Equals(arg))
+            //{
+            //    throw new InvalidOperationException("Cannot be added, because it's already exist");
+            //}
+            //return arg;
+
+            if (Count == 0)
             {
-                // test if it is not similar 
-                Peek (arg);
+                throw new InvalidOperationException();
             }
-            else
 
-                throw new InvalidOperationException("The Peek failed");
+            return this[Count - 1];
 
-            if (typeof(T).Equals(arg))
-            {
-                throw new InvalidOperationException("Cannot be added, because it's already exist");
-            }
-            return arg;
-            
 
-          // return default(T); // in the final solution this statement should be deleted or modified
+            // return default(T); // in the final solution this statement should be deleted or modified
         }
+
     }
+    
 }

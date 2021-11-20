@@ -49,8 +49,15 @@ namespace CSharp.Activity.Datastore
 
             //start solution
 
-            int[] storeArray = new int[arraySize];
+            //  int[] storeArray = new int[arraySize];
+
+            if (arraySize < 0)
+                this.storeArray = new T[DEFAULT_SIZE];
+            else
+                this.storeArray = new T[arraySize];
+
         }
+    
 
 
         /// <summary>
@@ -154,12 +161,12 @@ namespace CSharp.Activity.Datastore
             //start solution
             for (int i = 0; i > storeArray.Length; i++)
             {
-                if (argToFind.Equals(storeArray))
-                {
+                if (argToFind.Equals(storeArray[i]))
+
                     return i;
                 }
 
-            }
+            
 
             return NOT_IN_STRUCTURE;
 
@@ -179,16 +186,18 @@ namespace CSharp.Activity.Datastore
             //start solution
 
             //Array.Resize(ref objArray, objArray.Length + 1);
-           // objArray[objArray.Length - 1] = new Someobject();
+            // objArray[objArray.Length - 1] = new Someobject();
 
-            for
 
-                (int i=0; i > DEFAULT_SIZE; i++)
+            if (currentCount >= Capacity)
             {
-                return i;
+                return NOT_IN_STRUCTURE;
             }
-
-            return NOT_IN_STRUCTURE;
+            else
+            {
+                storeArray[currentCount++] = obj;
+                return Count;
+            }
         }
 
         /// <summary>
@@ -208,16 +217,28 @@ namespace CSharp.Activity.Datastore
             // storeArray.RemoveAt(index); 
 
             //  storeArray.RemoveAt("lazy");
+            //our solution:
+            //foreach (var item in storeArray)  // if if else/ for isEmpty used 
+            //{
+            //    if (currentCount > 0)
+            //    {
+            //        RemoveAt(index);
+            //    }
 
-            foreach (var item in storeArray)
+            //}
+
+            if (this.IsEmpty())
             {
-                if (currentCount > 0)
-                {
-                    RemoveAt(index);
-                }
-
+                throw new InvalidOperationException("Impossible to remove.");
             }
 
+            if (index < 0 || index > Capacity)
+            {
+                throw new InvalidOperationException("index");
+            }
+            else
+                for (int i = 0; i < storeArray.Length - 1; i++)
+                    storeArray[i] = storeArray[i + 1];
 
 
             throw new InvalidOperationException("Impossible to remove.");

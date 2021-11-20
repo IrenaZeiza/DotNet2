@@ -126,28 +126,41 @@ namespace CSharp.Activity.Profile
             return tempAge;
 
             #endregion
+            #region Activity 1.0
+            // TODO: Compute the age in years, based on the values of
+            // the variables given above and assign it to the variable 'tempAge'.
+            // You may declare additional local variables if necessary, but
+            // you are NOT allowed to use pre-built .NET APIs.
 
+            // :::
 
-            tempAge = currentYear - birthdayYear;
-
-            if (birthdayDay > currentDayOfMonth)
-
-            {
-                currentMonth = currentMonth - 1;
-
-                currentDayOfMonth = currentDayOfMonth
-                          + month[birthdayMonth - 1];
-            }
-
-            if (birthdayMonth > currentMonth)
-            {
-                currentYear = currentYear - 1;
-                currentMonth = currentMonth + 12;
-            }
-
-
+            #endregion
 
             return tempAge;
+        }
+    }
+}
+
+//tempAge = currentYear - birthdayYear;
+
+//            if (birthdayDay > currentDayOfMonth)
+
+//            {
+//                currentMonth = currentMonth - 1;
+
+//                currentDayOfMonth = currentDayOfMonth
+//                          + month[birthdayMonth - 1];
+//            }
+
+//            if (birthdayMonth > currentMonth)
+//            {
+//                currentYear = currentYear - 1;
+//                currentMonth = currentMonth + 12;
+//            }
+
+
+
+//            return tempAge;
 
 
 
