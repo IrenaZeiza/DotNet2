@@ -98,7 +98,7 @@ namespace CSharp.Activity.Datastore
             else return indexToInsert;
 
 
-            throw new NotImplementedException();
+             throw new NotImplementedException();
 
 
 
@@ -108,13 +108,13 @@ namespace CSharp.Activity.Datastore
             //Return index if the insert is successful and NOT_IN_ STRUCTURE if the conditions for insertion are not met.
         }
 
-        public override void Remove(T argToRemove)
+        public override void Remove(T argToRemove) //not valid due to current state of the object
         {
 
             for (int i = 0; i < this.Count; i++)
             {
                 //Check if the argument at the current index is equal to the input argument
-                if (this.storeArray[i].Equals(argToRemove))
+                if (storeArray[i].Equals(argToRemove))
                 {
                     Count--;
                 }
@@ -139,7 +139,7 @@ namespace CSharp.Activity.Datastore
             //  Throw an ArgumentNullException if a null is passed and T is a reference type.
 
 
-            throw new NotImplementedException();
+            throw new InvalidOperationException();
         }
 
         public override void RemoveAt(int removeObjectIndex)
@@ -164,7 +164,7 @@ namespace CSharp.Activity.Datastore
 
 
 
-            throw new NotImplementedException();
+            throw new ArgumentOutOfRangeException();
         }
 
     }                                   //If T is reference type, trying to add a null object to the structure should throw an ArgumentNullException.
