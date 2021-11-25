@@ -1,0 +1,6 @@
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity5.Test\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity5.Test\obj\Debug\net5.0\Activity5.Test.csproj.AssemblyReference.cache
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity5.Test\obj\Debug\net5.0\Activity5.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity5.Test\obj\Debug\net5.0\Activity5.Test.AssemblyInfoInputs.cache
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity5.Test\obj\Debug\net5.0\Activity5.Test.AssemblyInfo.cs
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity5.Test\obj\Debug\net5.0\Activity5.Test.csproj.CoreCompileInputs.cache
