@@ -14,40 +14,6 @@ namespace CSharp.Activity.Datastore
         }
 
 
-        // this.ArrayStore = new T[arraySize > 0 ? arraySize : DEFAULT_SIZE];
-
-
-
-        //  ArrayStore<T> == new ArrayStore<string>();
-
-        //    this.storeArray = new T[DEFAULT_SIZE];
-
-        // }
-        //  string[] storeArray<T> = new <string>[5];
-
-        //  public ArrayStore(string size) : (size)
-        //{
-        //No logic
-        // }
-
-        //   public void DoMyMethod()
-        // {
-        //  this[0] = "MyFirstString";
-        //     this[1] = "MySecondStrin";
-        //  }
-
-    
-
-
-    //abstract class MyPar
-    //{
-    //    private string[] arr;
-
-    //    public MyPar(int size)
-    //    {
-    //        this.arr = new string[size];
-    //    }
-    //}
     public override int Add(T argToAdd) //public override int Add(T argToAdd) – Adds the object ‘argToAdd’ to the end of the structure on the condition that
                                         //the structure isn’t full.
                                         //It returns the index if the add is successful or NOT_IN_ STRUCTURE if the conditions for adding are not met.

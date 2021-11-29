@@ -1,0 +1,16 @@
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\obj\Debug\net5.0\Activity6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\obj\Debug\net5.0\Activity6.AssemblyInfoInputs.cache
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\obj\Debug\net5.0\Activity6.AssemblyInfo.cs
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\obj\Debug\net5.0\Activity6.csproj.CoreCompileInputs.cache
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\bin\Debug\net5.0\Activity6.exe
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\bin\Debug\net5.0\Activity6.deps.json
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\bin\Debug\net5.0\Activity6.runtimeconfig.json
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\bin\Debug\net5.0\Activity6.runtimeconfig.dev.json
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\bin\Debug\net5.0\Activity6.dll
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\bin\Debug\net5.0\ref\Activity6.dll
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\bin\Debug\net5.0\Activity6.pdb
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\obj\Debug\net5.0\Activity6.dll
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\obj\Debug\net5.0\ref\Activity6.dll
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\obj\Debug\net5.0\Activity6.pdb
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\obj\Debug\net5.0\Activity6.genruntimeconfig.cache
+C:\Users\BunBun Industries\source\repos\DotNet2\source\repos\Activity6\Activity6\obj\Debug\net5.0\Activity6.csproj.AssemblyReference.cache
