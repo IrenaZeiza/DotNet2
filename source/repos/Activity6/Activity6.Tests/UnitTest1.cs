@@ -1,60 +1,71 @@
 using CSharp.Activity.Polymorphism;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using static CSharp.Activity.Polymorphism.Rectangle;
-using static CSharp.Activity.Polymorphism.Circle;
-using static CSharp.Activity.Polymorphism.Shape;
 
 
 namespace Activity6.Tests
 {
     [TestClass]
-    public class ShapeTest : Shape
-
+    public class ShapeTest
     {
-        Shape[] data;
-        private Shape shape;
-        private Rectangle rectangle;
-        private Circle circle;
-
-        double width = 5;
-        double lenght = 7;
-        double radius = 3;
-
-        [TestInitialize]
-        public void Initialize()
+        [TestMethod]
+        public void TestArea()
         {
-
+            Shape[] data;
         }
 
+       
+
+    
+    }
+
+    [TestClass]
+    public class RectangleTest
+    {
+        [TestMethod]
         public void CalculateArea()
         {
+            // arrange
+            double width = 5;
+            double length = 7;
+            double result = width * length;
 
-
-            //double result1 = width * lenght;
-            //Assert.AreEqual(35, Equals(result1));
-
-            //double result2 = 3.14 * radius * radius;
-            //Assert.AreEqual(28.26, Equals(result2));
-
-
-            double area1 = width * lenght;
-            Assert.AreEqual(35, Equals(area1));
-
-            double area2 = 3.14 * radius * radius;
-            Assert.AreEqual(28.26, Equals(area2));
+            //act
+            Assert.AreEqual(35, result);
         }
+            public void TestPositiveValue()
+            {
+                {
+                 
 
-    //    public override void CalculateArea(double width, double length)
-    //    {
-    //        throw new NotImplementedException();
-    //    }
+                    double length = -1;
+                    Assert.IsTrue(length <=0);
 
-    //    public override void CalculateArea(double radius)
-    //    {
-    //        throw new NotImplementedException();
-    //    }
+                    double width = -1;
+                    Assert.IsTrue(width <= 0);
+                }
+            }
+        
+    }
+
+    [TestClass]
+    public class CircleTest
+    {
+        [TestMethod]
+        public void CalculateArea()
+        {
+            double radius = 5;
+            const double PI = 3.14;
+
+          
+
+            double result = PI * (Math.Pow(radius, 2));
+            Assert.AreEqual(78.5, result);
+        }
+        public void TestPositiveValue()
+        {
+            double radius = -1;
+            Assert.IsTrue(radius <= 0);
+        }
     }
 }
-
-
