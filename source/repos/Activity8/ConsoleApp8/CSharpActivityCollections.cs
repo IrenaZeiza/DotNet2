@@ -1,71 +1,86 @@
-﻿using System;
+﻿using CSharp.Activity.Collections;
+using System;
+using System.Collections.Generic;
+
 
 namespace CSharp.Activity.Collections
 {
-    public class CustomerInfo : CustomerInfoCollection
+    public class CustomerInfo
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+       
 
-        int ID { get; set; } //Property to get or set the customer ID.
-        string Name { get; set; }
-        string Address { get; set; }
-        string Email { get; set; }
-        CustomerInfo(int id, string name, string address, string email) //– Constructor to 
-                                                                        //initialize the member variables
+        public int ID { get; set; } //Property to get or set the customer ID.
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string Email { get; set; }
+        public CustomerInfo(int id, string name, string address, string email) //– Constructor to 
+                                                                               //initialize the member variables
         {
             this.ID = id;
             this.Name = name;
             this.Address = address;
             this.Email = email;
 
-
-
         }
+
+   
+       
+        }
+        
+    }
+      
+
+       
+
+
+    
+
+
+public class CustomerInfoCollection 
+{
+
+   int []  collection = new int[10];
+  
+
+    public int Capacity
+       => collection.Length;
+
+  
+    public int Add(string CustomerInfo, int Capacity, int index) //Method to add the 
+                                                      //CustomerInfo object to the collection.This method should 
+                                                      //throw an ArgumentNullException if the input argument is null.
+                                                      //It should return the index at which the argument was added to
+                                                      //the collection or -1 if the object already is in the collection.
+    {
+
+        for (int i = 0; i < this.Capacity; i++)
+        {
+            //Check if the argument at the current index is equal to the input argument
+            if (this.Equals(CustomerInfo))
+            {
+                return -1;
+            }
+            else if (CustomerInfo == null)
+            {
+
+                throw new ArgumentNullException("Input value cannot be null");
+            }
+
+
+
+            else return i;
+        }
+
+        return index;
+
+        
     }
 
 
-    public class CustomerInfoCollection
-    {
-
-           
-        public Array [] collection;
-
-        //  public int Capacity = collection.Size;
-        public int Add(string CustomerInfo, int collection) //Method to add the 
-                                                            //CustomerInfo object to the collection.This method should 
-                                                            //throw an ArgumentNullException if the input argument is null.
-                                                            //It should return the index at which the argument was added to
-                                                            //the collection or -1 if the object already is in the collection.
-        {
-
-            for (int i = 0; i < collection; i++)
-            {
-                //Check if the argument at the current index is equal to the input argument
-                if (this.Equals(CustomerInfo))
-                {
-                    return -1;
-                }
-                else if (CustomerInfo == null)
-                {
-
-                    throw new ArgumentNullException("Input value cannot be null");
-
-
-                else
 
 
 
-                        return i;
 
-
-
-                }
-            }
-        }
-        
         public void Insert(int index, string CustomerInfo)
         {
 
@@ -116,54 +131,46 @@ namespace CSharp.Activity.Collections
         }
 
 
-            public bool Contains(string CustomerInfo)
+        public bool Contains(string CustomerInfo)
+        {
+            /*Method to check if the 
+        input CustomerInfo object exists in the collection. This method 
+     should throw an ArgumentNullException if the input argument 
+        is null. It should return true if the input object exists in the 
+        collection and false otherwise.*/
+
+            if (CustomerInfo == null)
             {
-                /*Method to check if the 
-            input CustomerInfo object exists in the collection. This method 
-         should throw an ArgumentNullException if the input argument 
-            is null. It should return true if the input object exists in the 
-            collection and false otherwise.*/
 
-                if (CustomerInfo == null)
-                {
+                throw new ArgumentNullException("Input value cannot be null");
 
-                    throw new ArgumentNullException("Input value cannot be null");
-
-                }
-                if
-                  (this.Equals(CustomerInfo))
-
-
-                    return true;
-
-                else
-
-                    return false;
             }
+            if
+              (this.Equals(CustomerInfo))
 
-            public int IndexOf(string CustomerInfo, int index, int collection)
-            // Method to find the index 
-            //of the input CustomerInfo object in the collection.This method
-            //should throw an ArgumentNullException if the input argument
-            //is null. This should return the index at which the argument can
-            //be found in the collection or -1 if the object can’t be found in the
-            //collection.
+
+                return true;
+
+            else
+
+                return false;
+        }
+
+        public int IndexOf(string CustomerInfo, int index)
+        // Method to find the index 
+        //of the input CustomerInfo object in the collection.This method
+        //should throw an ArgumentNullException if the input argument
+        //is null. This should return the index at which the argument can
+        //be found in the collection or -1 if the object can’t be found in the
+        //collection.
+        {
+            for (int i = 0; i > this.Capacity; i++)
             {
-                for (int i = 0; i > collection; i++)
-                {
-                    if (argToFind.Equals(storeArray[i]))
-
-                        return i;
-                }
-
-
-
-                return NOT_IN_STRUCTURE;
-
                 if (this.Equals(CustomerInfo))
-                {
-                    return index;
-                }
+
+                    return i;
+
+
                 else if (CustomerInfo == null)
                 {
 
@@ -173,10 +180,13 @@ namespace CSharp.Activity.Collections
 
 
 
-                    return -1; ;
+                    return -1;
             }
 
-            public override bool Equals(object obj)
+        return index;
+        }
+
+        public override bool Equals(object obj)
         {
             return base.Equals(obj);
         }
@@ -189,10 +199,8 @@ namespace CSharp.Activity.Collections
         public override string ToString()
         {
             return base.ToString();
-        }
+    }
 
-        public CustomerInfo T this[int index, int collection]
-    {
         //            indexer property. It
         //should get the CustomerInfo object from the collection at the
         //specified index or set the new CustomerInfo object at the
@@ -200,19 +208,38 @@ namespace CSharp.Activity.Collections
         //the new object is not null and doesn’ t belong to the collection
         //already).
 
+        public CustomerInfo this[int index]
+
+
+    {
+
         get
+
         {
-            if ((index< 0) || (index >= collection))
+            if ((index < 0) || (index >= this.Capacity))
+
                 throw new IndexOutOfRangeException("Invalid Index");
 
 
-            return collection index;
-    }
-    protected set
-        {
-            this.storeArray[index] = value;
+            return this[index];
         }
+
+
+        protected set
+
+        {
+            this[index] = value;
+        }
+    }
 }
+
+
+
+
+
+
+
+
 
 
 
