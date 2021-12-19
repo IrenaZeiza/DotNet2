@@ -1,0 +1,16 @@
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\obj\Debug\net5.0\TrainEvents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\obj\Debug\net5.0\TrainEvents.AssemblyInfoInputs.cache
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\obj\Debug\net5.0\TrainEvents.AssemblyInfo.cs
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\obj\Debug\net5.0\TrainEvents.csproj.CoreCompileInputs.cache
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\bin\Debug\net5.0\TrainEvents.exe
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\bin\Debug\net5.0\TrainEvents.deps.json
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\bin\Debug\net5.0\TrainEvents.runtimeconfig.json
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\bin\Debug\net5.0\TrainEvents.runtimeconfig.dev.json
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\bin\Debug\net5.0\TrainEvents.dll
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\bin\Debug\net5.0\ref\TrainEvents.dll
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\bin\Debug\net5.0\TrainEvents.pdb
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\obj\Debug\net5.0\TrainEvents.dll
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\obj\Debug\net5.0\ref\TrainEvents.dll
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\obj\Debug\net5.0\TrainEvents.pdb
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\obj\Debug\net5.0\TrainEvents.genruntimeconfig.cache
+C:\Users\BunBun Industries\source\repos\Activity9\TrainEvents\obj\Debug\net5.0\TrainEvents.csproj.AssemblyReference.cache

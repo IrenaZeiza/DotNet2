@@ -52,8 +52,8 @@ namespace CSharp.Activity.Polymorphism
                 Area = value;
             }
         }
-        public abstract double CalculateArea(double radius, double area);
-        public abstract double CalculateArea(double length, double width, double area);
+        public abstract void CalculateArea(double radius, double area);
+        public abstract void CalculateArea(double length, double width, double area);
 
 
 
@@ -64,10 +64,8 @@ namespace CSharp.Activity.Polymorphism
     public interface IPrintable
 
     {
-        void Print()
-        {
-
-        }
+        void Print();
+      
 
 
 

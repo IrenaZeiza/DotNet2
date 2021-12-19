@@ -13,9 +13,6 @@ namespace Activity6.Tests
         {
             Shape[] data;
         }
-
-       
-
     
     }
 
@@ -62,10 +59,12 @@ namespace Activity6.Tests
             double result = PI * (Math.Pow(radius, 2));
             Assert.AreEqual(78.5, result);
         }
+        [TestMethod]
         public void TestPositiveValue()
         {
             double radius = -1;
             Assert.IsTrue(radius <= 0);
         }
+    
     }
 }
