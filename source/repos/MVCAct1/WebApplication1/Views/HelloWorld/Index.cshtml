@@ -1,0 +1,23 @@
+﻿
+
+
+@{
+
+    ViewBag.Title = "Person";
+}
+
+<h2>Person</h2>
+
+@model WebApplication1.PersonModel
+@using (Html.BeginForm())
+
+{
+@Html.TextBoxFor (model =>model.Name);
+@Html.TextBoxFor (model =>model.SurName);
+<button>Enter!</button>
+}
+@{
+if((string)this.ViewData["welconmeStr"] != "")
+< style="color:blue">@Html.Display(string)</>
+ 
+}

@@ -56,15 +56,19 @@ namespace TCSharp.Activity.Events
 
         {
 
-           int train;
+           int train = 5;
 
-           ArrivalStatus arrivalStatus; 
-           DateTime arrivalTime;
+           ArrivalStatus arrivalStatus = ArrivalStatus.Arrived; 
+           DateTime arrivalTime = 11:00;
+
+
 
             TrainStation obj = new TrainStation();
 
 
-            obj.AnnounceArrival(int train, ArrivalStatus arrivalStatus, DateTime arrivalTime);
+            obj.AnnounceArrival(train, arrivalStatus, arrivalTime);
+
+          
            
             //   Console.WriteLine(Arrival);
 
